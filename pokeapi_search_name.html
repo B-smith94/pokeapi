@@ -29,16 +29,21 @@
         <header>
            <h3>Search By Name</h3>
         </header>
-        <div>
-            
-            <form>
-                <script src="pokeapi.js"></script>
-                <div>
-                    <label for="search_name">Pokemon Name</label>
-                    <input type="search" id="search-name" name="search-name" placeholder="Enter the Pokemon Name Here" required>
-                </div>
-            </form>
+        <div class="container-fluid">
+            <div class="bg-light border rounded">
+                <form>
+                    <script src="pokeapi.js"></script>
+                    <div class="mb-3">
+                        <label for="search_name" class="m-2 form-label">Pokemon Name</label>
+                        <div class="m-2">
+                            <input class="form-control " type="search" id="search-name" name="search-name" placeholder="Enter the Pokemon Name Here" required>
+                        </div>
+                    </div>
+                </form>
+            <div id="pokemon-info" class="m-2 border rounded bg-white"></div>
         </div>
-        <div id="pokemon-info"></div>
+        <footer>
+            <p class="text-center">&copy;Pokemon API, all rights reserved.</p>
+        </footer>
     </body>
 </html>
