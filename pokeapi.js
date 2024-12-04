@@ -9,6 +9,7 @@ document.addEventListener("input", async () => {
     const pokemonData = await fetchPokemonData(pokeName);
     const pokemonInfoElement = document.getElementById('pokemon-info');
     
+    
     pokemonInfoElement.innerHTML = `
     <div class="m-2">
         <h2>Name: ${pokemonData.name}</h2>
